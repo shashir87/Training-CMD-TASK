@@ -23,13 +23,12 @@ public class FootballProgramDemo {
         Pattern pattern = Pattern.compile("([\\s]{2})[0-9]{2}[*\\s]{4}[0-9]{2}");
         String regexForName="[.][\\s]{1}[aA-zZ]*";
         String regexForGoals="[\\d]{2}[\\s]{2}-[\\s]{2}[\\d]{2}";
-        BufferedReader reader=null;
+       
         try{
             try{
 
                 FileReader fileReader = new FileReader(filename);
-                reader = new BufferedReader(fileReader);
-                Scanner in = new Scanner(reader);
+                Scanner in = new Scanner(fileReader);
                 while(in.hasNextLine()){
                     String readLine = in.nextLine().trim();
                     Pattern goalPattern = Pattern.compile(regexForGoals);
