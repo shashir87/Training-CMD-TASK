@@ -1,10 +1,10 @@
-public class Employee implements java.io.Serializable
+import java.io.Serializable;
+
+public class Employee implements Serializable
 {
    public String name;
    public String address;
-   public int number;
-   public void printHello()
-   {
-      System.out.println("Hello World");
-   }
+   public int number = 10;
+   Salary salary=new Salary();
+   Friends friends = new Friends();
 }
